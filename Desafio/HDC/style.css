@@ -8,15 +8,11 @@ h1, h2, h3{
     font-family: 'Poppins', sans-serif;
 }
 p{
-    color: #555;
+    color: #544;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
 }
 nav{
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: inline-block;
-    justify-content: space-between;
+  
     position: fixed;
 }
