@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="/Cafe/style.css">
+    <link rel="stylesheet" href="/Desafio/Cafe/style.css">
 </head>
 <body>
     <main class="container">
-        <div class="card">
-            <div class="card-image">
+        <section class="card">
+            <header class="card-image">
                 <h1 class="card-heading">
                     Iniciar
                     <small>Deixe-nos criar sua conta</small>
                 </h1>
-            </div>
-        </div>
-        <form class="card-form">
-            <div class="input">
-                <input type="text" class="input-field" required placeholder="">
-                <label class="input-label">Nome completo</label>
-            </div>
-            <div class="input">
-                <input type="email" class="input-field" required placeholder=" ">
-                <label class="input-label">E-mail</label>
-            </div>
-            <div class="input">
-                <input type="password" class="input-field" required placeholder=" ">
-                <label class="input-label">Senha</label>
-            </div>
-            <div class="action">
-                <button class="action-button">Iniciar</button>
-            </div>
-            <div class="card-info">
-                <p>Ao se inscrever você concorda com nossos 
-                   <a href="#">Termos e condições</a>
-                </p>
-            </div>
-        </form>
+            </header>
+        </section>
+        <section>
+            <form class="card-form">
+                <div class="input">
+                    <input type="text" id="nome" class="input-field" required placeholder="">
+                    <label class="input-label" for="nome">Nome completo</label>
+                </div>
+                <div class="input">
+                    <input type="email" id="email" class="input-field" required placeholder=" ">
+                    <label class="input-label" for="email">E-mail</label>
+                </div>
+                <div class="input">
+                    <input type="password" id="senha" class="input-field" required placeholder=" ">
+                    <label class="input-label" for="senha">Senha</label>
+                </div>
+                <div class="action">
+                    <button class="action-button" type="submit">Iniciar</button>
+                </div>
+                <div class="card-info">
+                    <p>Ao se inscrever você concorda com nossos 
+                       <a href="#">Termos e condições</a>
+                    </p>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 </html>
-
-
