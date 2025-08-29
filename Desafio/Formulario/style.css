@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(209, 209, 209);
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+/* Inputs de texto ocupam toda a largura */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 2px solid #bbb;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+/* Inputs focados */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #673ab7;
+}
+
+/* Radios e checkboxes ficam inline */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  transform: scale(1.1); /* deixa eles um pouco maiores */
+  cursor: pointer;
+}
+
+/* Agrupamento do tipo de câmbio */
+.box-input p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.box-input label {
+  margin-right: 20px;
+  color: #444;
+  cursor: pointer;
+}
+
+/* Opcionais em grid */
+.optional-box {
+  margin-bottom: 20px;
+}
+
+.optional-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.optional-list li {
+  display: flex;
+  align-items: center;
+}
+
+
+h1,h2,h3,h4,h5{
+    color: #333;
+}  
+
+p,
+label {
+  color: #444;
+}
+
+.header{
+    height: 100px;
+    padding: 20px;
+    background-color: blueviolet;
+    text-align: center;
+}
+.header h3{
+    color: rgb(194, 190, 190);
+    margin-top: 0px;
+}
+.form-container{
+    background-color: #fdfdfd;
+    width: 60%;
+    margin: 0px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,1,0.8);
+    border-radius: 5px;
+    top: -62px;
+    position: relative;
+}
+.form-header p{
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: auto 0px;
+    text-transform: uppercase;
+    height: 40px;
+    line-height: 45px;  
+} 
+
+.form-body{
+    padding: 30px;
+}
+
+.form-title{
+    margin-bottom: 15px;
+}
+.form-body p{
+    margin-bottom: 20px;
+}
+.block{
+    display: block;
+}
+.optional-box{
+   display: inline-block;
+   margin: 0 30px 30px 0;
+}
+.optional-list li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.box-input p {
+  margin-bottom: 15px;
+}
+
+.required-field{
+    color: red;
+}
+.btn-submit {
+  background-color: #673ab7;
+  color: #fff;
+  border: 2px solid transparent;
+  padding: 12px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border-radius: 6px;
+  font-weight: bold;
+  display: block;
+  margin: 25px auto 0;
+  font-size: 0.95rem;
+}
+
+.btn-submit:hover {
+  background-color: #fff;
+  border-color: #673ab7;
+  color: #673ab7;
+  box-shadow: 0 4px 12px rgba(103, 58, 183, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .form-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  input,
+  textarea {
+    max-width: 100%;
+  }
+
+  .optional-box {
+    display: block;
+    margin: 15px 0;
+  }
+}

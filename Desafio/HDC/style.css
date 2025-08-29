@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+nav{
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-block;
+    justify-content: space-between;
+    position: fixed;
+}
