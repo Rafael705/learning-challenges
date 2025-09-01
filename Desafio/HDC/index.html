@@ -1,61 +1,187 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HDC Host</title>
-    <link rel="stylesheet" href="/Desafio/HDC/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HDC Host</title>
+  <!-- Ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="/Desafio/HDC/style.css" />
 </head>
 <body>
-    <div class="container">
-        <header class="navbar-container">
-            <nav>
-                <a href="#">
-                    <img src="" alt="Logo HDC Host" class="logo">
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Preços</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#" class="default-btn">Serviços</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="main-banner">
-                <h1>HDC Host</h1>
-                <p>Os melhores serviços para projetos de todos os tamanhos!</p>
-            </section>
-            <section class="services-container">
-                <ul>
-                    <li>
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Segurança</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa placeat sunt hic ducimus soluta blanditiis sequi nesciunt? Recusandae veniam quae aspernatur non ea praesentium dicta, delectus odio? Vitae, voluptatibus repudiandae!
-                        </p>
-                    </li>
-                    <li>
-                        <i class="fas fa-rocket"></i>
-                        <h3>performace</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa placeat sunt hic ducimus soluta blanditiis sequi nesciunt? Recusandae veniam quae aspernatur non ea praesentium dicta, delectus odio? Vitae, voluptatibus repudiandae!
-                        </p>
-                    </li>
-                    <li>
-                        <i class="fas fa-comments"></i>
-                        <h3>Suporte</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa placeat sunt hic ducimus soluta blanditiis sequi nesciunt? Recusandae veniam quae aspernatur non ea praesentium dicta, delectus odio? Vitae, voluptatibus repudiandae!
-                        </p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 HDC Host. Todos os direitos reservados.</p>
-        </footer>
-    </div>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="navbar-container">
+      <nav>
+        <a href="#">
+          <img src="img/hdchostlogo.png" alt="Logo HDC Host" class="logo" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Preços</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#" class="default-btn">Serviços</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Banner -->
+      <section class="main-banner">
+        <h1>HDC Host</h1>
+        <p>Os melhores serviços para projetos de todos os tamanhos!</p>
+      </section>
+
+      <!-- Serviços -->
+      <section class="services-container">
+        <ul>
+          <li>
+            <i class="fas fa-shield-alt"></i>
+            <h3>Segurança</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              veritatis non, distinctio, dolor sapiente dolorum ab delectus
+              rem labore animi consequuntur quo nulla autem vitae in eligendi
+              cumque corrupti ipsum.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-rocket"></i>
+            <h3>Performance</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              veritatis non, distinctio, dolor sapiente dolorum ab delectus
+              rem labore animi consequuntur quo nulla autem vitae in eligendi
+              cumque corrupti ipsum.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-comments"></i>
+            <h3>Suporte 24/7</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              veritatis non, distinctio, dolor sapiente dolorum ab delectus
+              rem labore animi consequuntur quo nulla autem vitae in eligendi
+              cumque corrupti ipsum.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Planos -->
+      <section class="pricing-container">
+        <h2>Planos e Preços</h2>
+        <p>Selecione o plano que atende as suas necessidades</p>
+        <div class="plans-container">
+          <article class="plan">
+            <ul>
+              <li class="price">R$15/mês</li>
+              <li class="plan-name">Básico</li>
+              <li>2GB de espaço</li>
+              <li>1 Subdomínio</li>
+              <li>25 contas de e-mail</li>
+              <li>C-panel</li>
+              <li>Suporte 24/7</li>
+              <li class="plan-btn">Saber mais</li>
+            </ul>
+          </article>
+          <article class="plan">
+            <ul>
+              <li class="price">R$30/mês</li>
+              <li class="plan-name">Dedicado</li>
+              <li>5GB de espaço</li>
+              <li>10 Subdomínios</li>
+              <li>50 contas de e-mail</li>
+              <li>C-panel</li>
+              <li>Suporte 24/7</li>
+              <li class="plan-btn">Saber mais</li>
+            </ul>
+          </article>
+          <article class="plan">
+            <ul>
+              <li class="price recommended">R$50/mês</li>
+              <li class="plan-name">Dedicado Plus</li>
+              <li>10GB de espaço</li>
+              <li>10 Subdomínios</li>
+              <li>100 contas de e-mail</li>
+              <li>C-panel</li>
+              <li>Suporte 24/7</li>
+              <li class="plan-btn recommended">Saber mais</li>
+            </ul>
+          </article>
+          <article class="plan">
+            <ul>
+              <li class="price">R$100/mês</li>
+              <li class="plan-name">Cloud</li>
+              <li>20GB de espaço</li>
+              <li>20 Subdomínios</li>
+              <li>200 contas de e-mail</li>
+              <li>C-panel</li>
+              <li>Suporte 24/7</li>
+              <li class="plan-btn">Saber mais</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Domínios -->
+      <section class="domain-search">
+        <h2>Qual domínio você quer para o seu site?</h2>
+        <p>Verifique se o domínio está disponível</p>
+        <form>
+          <div class="input-group">
+            <input type="text" name="domain" id="domain" class="input-field" placeholder=" " required />
+            <label for="domain" class="input-label">Digite seu domínio</label>
+          </div>
+          <input type="submit" value="Procurar domínio" class="default-btn"/>
+        </form>
+      </section>
+
+      <!-- Contato -->
+      <section class="contact-section">
+        <h2>Mande uma mensagem</h2>
+        <p>
+          Envie a sua mensagem, em até 4 horas um especialista entrará em
+          contato
+        </p>
+        <form>
+          <div class="input-group">
+            <input type="text" name="name" id="name" class="input-field" placeholder=" " required />
+            <label for="name" class="input-label">Seu nome</label>
+          </div>
+          <div class="input-group">
+            <input type="email" name="email" id="email" class="input-field" placeholder=" " required />
+            <label for="email" class="input-label">Seu e-mail</label>
+          </div>
+          <div class="input-group">
+            <textarea name="message" id="message" rows="4" class="input-field" placeholder=" " required></textarea>
+            <label for="message" class="input-label">Mensagem</label>
+          </div>
+          <input type="submit" value="Enviar" class="default-btn"/>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 HDC Host. Todos os direitos reservados.</p>
+      <form class="newsletter">
+        <div class="input-group">
+          <input type="email" id="newsletter" class="input-field" placeholder=" " required />
+          <label for="newsletter" class="input-label">Assine nossa newsletter</label>
+        </div>
+        <input type="submit" value="Inscrever" class="default-btn"/>
+      </form>
+    </footer>
+  </div>
 </body>
 </html>
