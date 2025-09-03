@@ -78,6 +78,7 @@ p {
   padding: 12px 20px;
   border-radius: 8px;
   transition: all 0.3s ease;
+    border: none;
 }
 .default-btn:hover {
   background-color: #e2a913;
@@ -222,16 +223,179 @@ p {
   }
 }
 .domain-search {
+    position: relative;
+    padding: 5rem 2rem;
+    background: #fff;
+    text-align: center;
+    width: auto;
+}
+.domain-search form {
+
+    margin-top: 1rem;
+  
+}
+.domain-search input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  height: 50%;
+  border: 0;
+  font-size: 17px;
+  margin-bottom: 5px;
+  border-bottom: 1PX solid #e2a913;
+
+}
+.domain-search input[type="text"]:focus ~ label {
+    transform: translateY(-20px);
+    color:  #f4b41a;
+}
+
+.domain-search label {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  color: #e1e1e1;
+  font-size: 17px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* ...existing code... */
+
+.input-group {
+  position: relative;
+  margin: 2rem auto 2rem auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 10px 12px 10px;
+  border: none;
+  border-bottom: 2px solid #e2a913;
+  background: transparent;
+  font-size: 1rem;
+  color: #232a34;
+  outline: none;
+  transition: border-color 0.3s;
+  resize: none;
+}
+
+.input-field:focus {
+  border-bottom: 2.5px solid #f4b41a;
+}
+
+.input-label {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.3s;
+  background: #fff;
+  padding: 0 4px;
+}
+
+/* Label animada ao focar ou preencher */
+.input-field:focus + .input-label,
+.input-field:not(:placeholder-shown) + .input-label,
+.input-field:valid + .input-label {
+  top: -12px;
+  font-size: 0.85rem;
+  color: #f4b41a;
+  background: #fff;
+  padding: 0 4px;
+}
+
+/* Ajuste para textarea */
+textarea.input-field {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Ajuste para label do textarea */
+textarea.input-field:focus + .input-label,
+textarea.input-field:not(:placeholder-shown) + .input-label,
+textarea.input-field:valid + .input-label {
+  top: -12px;
+  font-size: 0.85rem;
+  color: #f4b41a;
+  background: #fff;
+  padding: 0 4px;
+}
+
+
+footer {
+  background: #232a34;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+footer .newsletter {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+footer .default-btn {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* CONTACT SECTION */
+.contact-section {
   padding: 5rem 2rem;
   background: #fff;
   text-align: center;
 }
-.domain-search form {
+
+.contact-section form {
+  margin: 2rem auto 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .input-group {
+    max-width: 100%;
+    margin: 1.5rem 0;
+  }
+  .plans-container {
+    grid-template-columns: 1fr;
+  }
+  .main-banner {
+    padding: 0 1rem;
+  }
+  .contact-section,
+  .services-container,
+  .pricing-container,
+  .domain-search {
+    padding: 2rem 1rem;
+  }
+}
+
+
+input[type="submit"].default-btn,
+button.default-btn {
+  display: block;
+  width: 100%;
   margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
-.domain-search input[type="text"] {
-  padding: 10px;
-  width: 300px;
-  max-width: 100%;
-  
+
+
+.input-field:disabled + .input-label {
+  color: #ccc;
 }
+
